@@ -5,7 +5,7 @@
  * Date: 2018/3/12
  * Time: 下午10:20
  */
-require_once "Documentable.php";
+//require_once "Documentable.php";
 class HtmlDocument implements Documentable
 {
     protected $url;
@@ -34,6 +34,6 @@ class HtmlDocument implements Documentable
         return $html;
     }
 }
-
-$HtmlDocument = new HtmlDocument("http://www.baidu.com");
-var_dump($HtmlDocument->getContent());
+//
+//$HtmlDocument = new HtmlDocument("http://www.baidu.com");
+//var_dump($HtmlDocument->getContent());
