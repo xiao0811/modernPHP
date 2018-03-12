@@ -8,7 +8,7 @@
  */
 
 $closure = function ($name) {
-    echo "Hello " . $name . "\n";
+    return "Hello " . $name . "\n";
 };
 
 echo $closure("xiaosha");
