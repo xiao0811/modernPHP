@@ -13,6 +13,7 @@ spl_autoload_register(function ($class) {
 
     $file =$class_map[$class];
 //    echo $file;
+    
     if (file_exists($file)) {
         require_once $file;
     }
