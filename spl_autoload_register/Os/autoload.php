@@ -11,9 +11,9 @@ spl_autoload_register(function ($class) {
         'os\Linux' => './Linux.php'
     ];
 
-    $file =$class_map[$class];
+    $file = $class_map[$class];
 //    echo $file;
-    
+
     if (file_exists($file)) {
         require_once $file;
     }
