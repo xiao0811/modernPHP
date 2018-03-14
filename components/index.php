@@ -9,5 +9,5 @@
 require 'vendor/autoload.php';
 
 $client = new \GuzzleHttp\Client();
-$res = $client->request('GET', 'https://api.github.com/repos/guzzle/guzzle');
-echo $res->getStatusCode();
+$res = $client->request('get', 'https://api.github.com/repos/guzzle/guzzle');
+echo $res->getBody();
