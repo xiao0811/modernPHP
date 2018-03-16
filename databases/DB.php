@@ -40,7 +40,6 @@ class DB
             echo "Database connection failed";
             exit();
         }
-
     }
 
     /**

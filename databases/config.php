@@ -8,7 +8,7 @@
 
 return [
     'host' => 'localhost',
+    'dbname' => 'xiaofei',
     'username' => 'root',
     'password' => 'root',
-    'dbname' => 'xiaofei'
 ];

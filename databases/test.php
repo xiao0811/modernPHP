@@ -8,10 +8,15 @@
 
 require_once 'DB.php';
 require_once 'function.php';
+require_once 'redis.php';
+require_once 'Xiao.php';
+//
+//$data = require_once 'config.php';
+//
+//$db = new DB($data);
+//$sql = "select * from overwatch";
+//dd($db->pdoQueryArray($sql));
+//echo "abc";
 
-$data = require_once 'config.php';
-
-$db = new DB($data);
-$sql = "select * from overwatch";
-dd($db->pdoQueryArray($sql));
-echo "abc";
+//Xiao::hello();
+XiaoRedis::add();
