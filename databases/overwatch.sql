@@ -1,0 +1,24 @@
+﻿INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (1, 'ana', '安娜');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (2, 'bastion', '堡垒');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (3, 'dva', 'D.VA');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (4, 'genji', '源氏');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (5, 'hanzo', '半藏');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (6, 'junkrat', '狂鼠');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (7, 'lucio', '卢西奥');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (8, 'mccree', '麦克雷');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (9, 'mei', '美');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (10, 'mercy', '天使');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (11, 'pharah', '法拉');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (12, 'reaper', '死神');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (13, 'reinhardt', '莱因哈特');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (14, 'roadhog', '路霸');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (15, 'soldier-76', '士兵:76');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (16, 'sombra', '黑影');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (17, 'symmetra', '阿三');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (18, 'torbjorn', '托比昂');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (19, 'tracer', '闪光');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (20, 'widowmaker', '寡妇');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (21, 'winston', '温斯顿');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (22, 'zarya', '毛妹');
+INSERT INTO `overwatch` (`id`, `name`, `chinese_name`) VALUES (23, 'zenyatta', '禅雅塔');
+--  LOAD DATA LOCAL INFILE '/home/xiaosha/Desktop/guoyun/modernPHP/databases/overwatch.sql' INTO TABLE overwatch
