@@ -21,6 +21,5 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_HEADERFUNCTION, $header);
 $res = curl_exec($ch);
 
-
 var_dump($res);
 curl_close($ch);
