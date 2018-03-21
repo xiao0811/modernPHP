@@ -7,11 +7,21 @@
  */
 class XiaoRedis
 {
-   public static function add()
-   {
-       $redis = new Redis();
-       $redis->connect('127.0.0.1');
-       $redis->set('abc', 'abc');
-       echo $redis->get('abc');
-   }
+    protected $redis;
+
+    public function __construct()
+    {
+        $this->redis = new Redis();
+        $this->redis->connect('127.0.0.1');
+    }
+
+    public function add($key, $value)
+    {
+        return $this->redis->set($key, $value);
+    }
+
+    public function get($key)
+    {
+        return $this->redis->get($key);
+    }
 }

@@ -19,4 +19,6 @@ require_once 'Xiao.php';
 //echo "abc";
 
 //Xiao::hello();
-XiaoRedis::add();
+$redis = new XiaoRedis();
+$redis->add('name', '骁傻');
+dd($redis->get('name'));
