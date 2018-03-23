@@ -21,4 +21,4 @@ require_once 'Xiao.php';
 //Xiao::hello();
 $redis = new XiaoRedis();
 $redis->add('name', '骁傻');
-dd($redis->get('name'));
+dd(getfirstchar('宝马'));
