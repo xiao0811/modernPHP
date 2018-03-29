@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: 骁傻
- * Date: 2018-3-28
- * Time: 8:45
+ * Date: 2018-3-29
+ * Time: 9:30
  */
 
 class Bim
@@ -52,17 +52,14 @@ class Container
 
     public function __set($name, $value)
     {
+        // TODO: Implement __set() method.
         $this->s[$name] = $value;
     }
 
     public function __get($name)
     {
+        // TODO: Implement __get() method.
         return $this->build($this->s[$name]);
-    }
-
-    public function getS()
-    {
-        return $this->s;
     }
 
     public function build($className)
@@ -73,26 +70,19 @@ class Container
 
         $reflector = new ReflectionClass($className);
 
-        // 检查类是否可实例化, 排除抽象类abstract和对象接口interface
         if (!$reflector->isInstantiable()) {
             throw new Exception("Can't instantiate this.");
         }
 
-        // 获取类的构造函数
         $constructor = $reflector->getConstructor();
 
-        // 若无构造函数,直接实例化并返回
         if (is_null($constructor)) {
             return new $className;
         }
 
-        // 取构造函数参数, 通过ReflectionParameter 数组返回参数列表
         $parameters = $constructor->getParameters();
-
-        // 递归解析构造函数的参数
         $dependencies = $this->getDependencies($parameters);
 
-        // 创建一个类的新实例, 给出的参数将传递到类的构造函数
         return $reflector->newInstanceArgs($dependencies);
     }
 
@@ -104,10 +94,8 @@ class Container
             $dependency = $parameter->getClass();
 
             if (is_null($dependency)) {
-                // 是变量,有默认值则设置默认值
                 $dependencies[] = $this->resolveNonClass($parameter);
             } else {
-                // 是一个类, 递归解析
                 $dependencies[] = $this->build($dependency->name);
             }
         }
@@ -117,8 +105,7 @@ class Container
 
     public function resolveNonClass($parameter)
     {
-        // 有默认值则返回默认值
-        if ($parameter->isDefaultValueAvailable()) {
+        if ($parameter->isDefaultValueAvailable) {
             return $parameter->getDefaultValue();
         }
 
@@ -127,22 +114,9 @@ class Container
 }
 
 $c = new Container();
+//var_dump($c);
 
-$c->bar = 'Bar';
-$c->foo = function ($c) {
-    return new Foo($c->bar);
-};
+$c->bim = 'Bim';
 
-$foo = $c->foo;
-//var_dump($foo);
-
-//$foo->doSomeThing();
-
-$di = new Container();
-$di->foo = 'Foo';
-
-$foo = $di->foo;
-
-//var_dump($foo);
-
-$foo->doSomeThing();
+$bim = $c->bim;
+$bim->doSomeThing();
