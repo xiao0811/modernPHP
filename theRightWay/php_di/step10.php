@@ -128,5 +128,5 @@ $di = new Container();
 $di->foo = 'Foo';
 //var_dump($di->getS());
 $foo = $di->foo;
-//var_dump($foo);
-$foo->doSomeThing();
+var_dump($foo);
+//$foo->doSomeThing();

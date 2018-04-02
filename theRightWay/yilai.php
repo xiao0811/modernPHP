@@ -33,14 +33,21 @@ class Database
     {
         $this->adapter = $adapter;
     }
+
+    public function xiaosha()
+    {
+        $this->adapter->xiaosha();
+    }
 }
 
 class MySqlAdapter
 {
-    public function __construct()
+    public function xiaosha()
     {
         echo "xiaosha";
     }
 }
 
-new Database(new MySqlAdapter());
+$xiao = new Database(new MySqlAdapter());
+
+$xiao->xiaosha();
