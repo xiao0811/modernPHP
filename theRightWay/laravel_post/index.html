@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Access-Control-Allow-Origin" content="*"> -->
+        <title>骁傻-laravel</title>
+        <script src="ajax.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <form class="" action="" method="post">
+            <input type="hidden" name="" value="" id="form_hidden">
+            <button type="button" name="button" id="btn">xiaosha</button>
+        </form>
+    </body>
+</html>
+<script type="text/javascript">
+    window.onload = function () {
+        var form_hidden = document.getElementById('form_hidden');
+        var btn = document.getElementById('btn');
+        ajax({
+           url: "http://localhost/nima",              //请求地址
+           // url: "action.php",              //请求地址
+           type: "get",                       //请求方式
+           // data: { name: "xiaosha", age: 20 },        //请求参数
+           dataType: "json",
+           success: function (response, xml) {
+               var res = JSON.parse(response);
+               // alert(res._token)
+            form_hidden.value = res._token;
+           },
+           fail: function (status) {
+               // 此处放失败后执行的代码
+           }
+       });
+
+       btn.addEventListener('click', function () {
+           ajax({
+               url: "http://localhost/test_post",              //请求地址
+               type: "POST",                       //请求方式
+               // data: { _token: form_hidden.value },        //请求参数
+               dataType: "json",
+               success: function (response, xml) {
+                   var res = JSON.parse(response);
+                   console.log(res.age);
+               },
+               fail: function (status) {
+                   // 此处放失败后执行的代码
+               }
+           });
+           // alert(form_hidden.value)
+       }, false);
+    }
+</script>
