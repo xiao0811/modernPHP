@@ -7,5 +7,5 @@
  */
 
 $buy_time = strtotime('2017-10-16');
-$end_time = strtotime(date("2018-4-12"));
+$end_time = strtotime("2018-04-12");
 echo ($end_time - $buy_time) / 86400;
