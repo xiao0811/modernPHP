@@ -23,7 +23,9 @@ class DB
     protected $port;
     protected static $pdo;
 
-    public function __construct($data)
+    static private $_instance;
+
+    protected function __construct($data)
     {
         $this->host = $data['host'];
         $this->username = $data['username'];
@@ -47,7 +49,7 @@ class DB
      * @param $sql
      * @return array|mixed
      */
-    public function pdoQuery($sql)
+    public static function pdoQuery($sql)
     {
         $result = [];
 
@@ -62,7 +64,7 @@ class DB
      * @param $sql
      * @return array
      */
-    public function pdoQueryArray($sql)
+    public static function pdoQueryArray($sql)
     {
         $result = [];
 
@@ -72,5 +74,14 @@ class DB
         }
 
         return $result;
+    }
+
+    public static function getInstance($data)
+    {
+        if (!(self::$_instance instanceof self)) {
+            self::$_instance = new self($data);
+        }
+
+        return self::$_instance;
     }
 }
