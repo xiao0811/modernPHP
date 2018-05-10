@@ -7,6 +7,8 @@
  */
 
 
-echo "<pre>";
-var_dump($_SERVER);
-echo "</pre>";
+if (!strpos($_SERVER['HTTP_REFERER'], '192.168.0.109')) {
+    header('Location:http://www.baidu.com');
+} else {
+    echo "zhengque";
+}
