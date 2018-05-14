@@ -7,7 +7,7 @@
  */
 
 $arr = [];
-for ($i = 0; $i < 1000; $i++) {
+for ($i = 0; $i < 10000; $i++) {
     $arr[] = rand(100000, 999999);
 }
 
@@ -18,6 +18,7 @@ echo "</pre>";
 
 function xiaoSort($arr)
 {
+    echo "start :" . microtime(true) . "<br>";
     $len = count($arr);
     for ($i = 1; $i < $len; $i++) {
         for ($j = 0; $j < $len - $i; $j++) {
@@ -29,7 +30,7 @@ function xiaoSort($arr)
             }
         }
     }
-
+    echo "end :" . microtime(true) . "<br>";
     return $arr;
 }
 
