@@ -25,4 +25,6 @@ class Db
 
         return self::$_instance;
     }
+
+    // tianjia
 }
