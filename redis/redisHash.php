@@ -8,11 +8,19 @@
 
 $redis = new Redis();
 $redis->connect('127.0.0.1');
+define("USERS_INFO", "USERS");
 
-$redis->hMset('xiaosha', [
+$redis->hMset(USERS_INFO, [
     'name' => 'xiaosha',
     'age' => 30,
     'abc' => 'bcd'
 ]);
 
-var_dump($redis->hGet('xiaosha', 'abc'));
+//$redis->hMset(USERS_INFO, [
+//    'name' => 'xiaoge',
+//    'age' => 20,
+//    'abc' => "xiaosha"
+//]);
+
+var_dump($redis->hGet(USERS_INFO, 'abc'));
+
