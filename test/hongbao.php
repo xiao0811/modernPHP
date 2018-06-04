@@ -6,6 +6,10 @@
  * Time: 下午10:30
  */
 
+/**
+ * Class Hongbao
+ * 随机红包
+ */
 class Hongbao
 {
     static public function get($totle, $numbers, $flu = 0.9)
