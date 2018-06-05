@@ -12,7 +12,7 @@
  */
 class Hongbao
 {
-    static public function get($totle, $numbers, $flu = 0.9)
+    static public function get($totle, $numbers, $flu = 0.5)
     {
         $every = $totle / $numbers;
         $hongbaos = [];

@@ -23,4 +23,3 @@ $redis->hMset(USERS_INFO, [
 //]);
 
 var_dump($redis->hGet(USERS_INFO, 'abc'));
-
