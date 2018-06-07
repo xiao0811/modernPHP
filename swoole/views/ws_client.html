@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>websocket</title>
+</head>
+<body>
+<p>xiaosha-webscoket</p>
+</body>
+</html>
+<script>
+    var wsUrl = "ws://192.168.0.105:9501";
+    var websocket = new WebSocket(wsUrl);
+
+    websocket.onopen = function (ev) {
+        websocket.send("xiaosha");
+        console.log("success!");
+    }
+
+    websocket.onmessage = function (ev) {
+        console.log(ev.data);
+    }
+
+    websocket.onclose = function (ev) {
+        console.log("close!");
+    }
+
+    websocket.onerror = function (ev, e) {
+        console.log("error:" + ev.data)
+    }
+</script>
