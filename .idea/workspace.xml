@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a97d552-3195-49db-9618-09e743fb6c0b" name="Default" comment="" />
+    <list default="true" id="3a97d552-3195-49db-9618-09e743fb6c0b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,16 +16,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cover.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cover.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oop/cover.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+            <state relative-caret-position="107">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="e#6#82#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extends.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oop/extends.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-349" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="caipiao.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/caipiao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="718">
+              <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="14" />
+              <folding>
+                <element signature="e#6#102#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/theRightWay/laravel_post/action.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -60,6 +86,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -77,17 +104,32 @@
               <item name="modernPHP" type="462c0819:PsiDirectoryNode" />
               <item name="oop" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="modernPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modernPHP" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="modernPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modernPHP" type="462c0819:PsiDirectoryNode" />
+              <item name="theRightWay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="modernPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modernPHP" type="462c0819:PsiDirectoryNode" />
+              <item name="theRightWay" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel_post" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -114,15 +156,16 @@
       <workItem from="1525744414029" duration="232000" />
       <workItem from="1525744679694" duration="66000" />
       <workItem from="1525767626019" duration="219000" />
+      <workItem from="1528697210995" duration="209000" />
+      <workItem from="1528697439707" duration="242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="517000" />
+    <option name="totallyTimeSpent" value="968000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="990" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1920" height="1012" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18854167" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -131,15 +174,15 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -154,6 +197,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/oop/cover.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="e#6#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oop/cover.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding>
+            <element signature="e#6#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oop/cover.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#6#82#0#PHP" expanded="true" />
@@ -165,9 +228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -182,18 +242,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/cover.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+        <state relative-caret-position="107">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
             <element signature="e#6#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oop/extends.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theRightWay/laravel_post/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="40" column="67" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theRightWay/laravel_post/action.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/caipiao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="14" />
+          <folding>
+            <element signature="e#6#102#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

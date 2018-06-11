@@ -7,4 +7,15 @@
  */
 
 $data = file_get_contents("city.json");
-echo $data;
+//echo $data;
+
+$citys = json_decode($data);
+
+/**
+foreach ($citys as $city) {
+
+}
+*/
+echo "<pre>";
+var_dump($citys);
+echo "</pre>";
