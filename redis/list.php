@@ -34,7 +34,7 @@ $xiaozang = [
 //    echo "OK";
 //}
 
-$redis->lpush("xiao", 'panxiao', 'xiaojian');
+$redis->lpush("xiao", 'panxiao', 'xiaosha');
 
 $result = $redis->lRange('xiao', 0, -1);
 
