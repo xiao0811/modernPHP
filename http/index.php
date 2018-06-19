@@ -11,4 +11,4 @@ require_once "../common/function.php";
 $client = new \GuzzleHttp\Client();
 $res = $client->request('get', 'http://www.baidu.com');
 
-dd($res->getHeaders());
+echo($res->getBody());
