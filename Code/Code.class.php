@@ -116,7 +116,12 @@ class Code
         $h = $this->height;
         $bgColor = $this->bgColor;
         $img = imagecreatetruecolor($w, $h);
-        $bgColor = imagecolorallocate($img, hexdec(substr($bgColor, 1, 2)), hexdec(substr($bgColor, 3, 2)), hexdec(substr($bgColor, 5, 2)));
+        $bgColor = imagecolorallocate(
+            $img,
+            hexdec(substr($bgColor, 1, 2)),
+            hexdec(substr($bgColor, 3, 2)),
+            hexdec(substr($bgColor, 5, 2))
+        );
         imagefill($img, 0, 0, $bgColor);
         $this->img = $img;
         $this->createLine();
@@ -131,7 +136,12 @@ class Code
         $w = $this->width;
         $h = $this->height;
         $line_color = "#dcdcdc";
-        $color = imagecolorallocate($this->img, hexdec(substr($line_color, 1, 2)), hexdec(substr($line_color, 3, 2)), hexdec(substr($line_color, 5, 2)));
+        $color = imagecolorallocate(
+            $this->img,
+            hexdec(substr($line_color, 1, 2)),
+            hexdec(substr($line_color, 3, 2)),
+            hexdec(substr($line_color, 5, 2))
+        );
         $l = $h / 5;
         for ($i = 1; $i < $l; $i++) {
             $step = $i * 5;
@@ -156,14 +166,32 @@ class Code
         $this->createCode();
         $color = $this->fontColor;
         if (!empty($color)) {
-            $fontColor = imagecolorallocate($this->img, hexdec(substr($color, 1, 2)), hexdec(substr($color, 3, 2)), hexdec(substr($color, 5, 2)));
+            $fontColor = imagecolorallocate(
+                $this->img,
+                hexdec(substr($color, 1, 2)),
+                hexdec(substr($color, 3, 2)),
+                hexdec(substr($color, 5, 2))
+            );
         }
         $x = ($this->width - 10) / $this->codeLen;
         for ($i = 0; $i < $this->codeLen; $i++) {
             if (empty($color)) {
-                $fontColor = imagecolorallocate($this->img, mt_rand(50, 155), mt_rand(50, 155), mt_rand(50, 155));
+                $fontColor = imagecolorallocate(
+                    $this->img,
+                    mt_rand(50, 155),
+                    mt_rand(50, 155),
+                    mt_rand(50, 155)
+                );
             }
-            imagettftext($this->img, $this->fontSize, mt_rand(-30, 30), $x * $i + mt_rand(6, 10), mt_rand($this->height / 1.3, $this->height - 5), $fontColor, $this->font, $this->code [$i]);
+            imagettftext(
+                $this->img,
+                $this->fontSize,
+                mt_rand(-30, 30),
+                $x * $i + mt_rand(6, 10),
+                mt_rand($this->height / 1.3, $this->height - 5),
+                $fontColor, $this->font,
+                $this->code [$i]
+            );
         }
         $this->fontColor = $fontColor;
     }
@@ -177,13 +205,28 @@ class Code
         }
 
         for ($i = 0; $i < 2; $i++) {
-            imageline($this->img, mt_rand(0, $this->width), mt_rand(0, $this->height), mt_rand(0, $this->width), mt_rand(0, $this->height), $pix_color);
+            imageline(
+                $this->img,
+                mt_rand(0, $this->width),
+                mt_rand(0, $this->height),
+                mt_rand(0, $this->width),
+                mt_rand(0, $this->height),
+                $pix_color
+            );
         }
         //画圆弧
         for ($i = 0; $i < 1; $i++) {
             // 设置画线宽度
-            imagearc($this->img, mt_rand(0, $this->width), mt_rand(0, $this->height), mt_rand(0, $this->width), mt_rand(0, $this->height)
-                , mt_rand(0, 160), mt_rand(0, 200), $pix_color);
+            imagearc(
+                $this->img,
+                mt_rand(0, $this->width),
+                mt_rand(0, $this->height),
+                mt_rand(0, $this->width),
+                mt_rand(0, $this->height),
+                mt_rand(0, 160),
+                mt_rand(0, 200),
+                $pix_color
+            );
         }
         imagesetthickness($this->img, 1);
     }
